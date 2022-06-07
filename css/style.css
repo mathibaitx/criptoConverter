@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url(/img/bk.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #FFB526;
+    overflow-x: hidden;
+    color: #F8F8F8;
+    font-family: 'Bakbak One', cursive;
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        background-size: cover;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #FF7347
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+section {
+    background-color: #F8F8F8;
+    border-radius: 1em;
+    padding: 1em;
+    max-width: 350px;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+input[type="number"] {
+    text-align: center;
+    width: 6em;
+    height: 6em;
+    outline: none;
+    border: 0.2em solid black;
+    font-weight: bolder;
+}
+
+i {
+    color: black;
+    font-size: 4em;
+}
+
+input[type="submit"] {
+    background-color: #FF5A26;
+    padding: 0.5em 1em 0.5em 1em;
+    border: none;
+    color: #F8F8F8;
+    border-radius: 1.5em;
+}
+
+input[type="submit"]:active {
+    background-color: #FF7347
+}
+
+p {
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#div-historico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+#div-resultado {
+    padding: 2em 4em 2em 4em;
+    background-color: #dddddd;
+    text-align: center;
+    margin: 4em 0 4em 0;
+    border-radius: 1em;
+}
+
+#div-historicoDatos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 1em;
+    background-color: #dddddd;
+    border-radius: 1em;
+}
+
+#div-historicoDatos div>p {
+    color: #EA4335;
+    font-size: 0.9em;
+}
+
+#div-resultado * {
+    font-size: 2em;
+}
+
+#div-resultado p {
+    font-weight: bolder;
+}
+
+#div-resultado p:last-of-type {
+    color: #005C09;
+}
+
+#div-error p {
+    font-size: 0.8em;
+    color: red;
+}
